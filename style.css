@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 72px;
+    margin-bottom: 50px;
+    font-family:'Indie Flower', cursive;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+h1,h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+}
+
+.hero-section {
+    height: 100vh;
+    background-color: #3E7249;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1,
+.hero-section h2 {
+    color: #fff;
+}
+
+.resume-section .resume-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.resume-section .resume-container h2,
+.resume-section .resume-container p {
+    color: #3E7249;
+}
+
+.resume-section .resume-container .profile-image {
+    width: 300px;
+    height: 200px;
+}
+
+.skills-section {
+    background-color: #92D14F;
+    text-align: center;
+    padding: 50px;
+}
+
+.skills-section h2 {
+    color: #fff;
+}
+
+.skills-section .skills-image {
+    max-width: 500px;
+    height: auto;
+}
+
+.aboutMe-section {
+    color: #3E7249;
+    text-align: center;
+    padding: 40px;
+}
+.aboutMe-section h2 {
+    font-weight: bold;
+}
+.aboutMe-section * {
+    padding-bottom: 30px;
+}
+.aboutMe-section .school-msg {
+    width: 35%;
+    margin: 10px auto;
+}
+
+.contact-section {
+    background-color: #3E7249;
+    color: #fff;
+}
+.contact-section .socials {
+    color: #fff;
+    text-decoration: none;
+}
+.contact-section .socials:hover,
+.contact-section .socials:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+.contact-section .contact-btn {
+    color: #fff;
+    background-color: #92D14F;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.contact-section .contact-btn:hover,
+.contact-section .contact-btn:focus {
+    background-color: #69a12d;
+}
+
+/* Media queries */
+
+@media (max-width: 1024px) {
+    .aboutMe-section .school-msg {
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+.skills-section .skills-image {
+    max-width: 300px;
+    height: auto;
+}
+.resume-section .resume-container p {
+    font-size: 18px;
+    text-align: center;
+}
+.aboutMe-section h2 {
+    font-size: 38px;
+}
+.aboutMe-section p {
+    font-size: 18px;
+}
+.aboutMe-section .school-msg {
+    width: 85%;
+}
+ 
+}
